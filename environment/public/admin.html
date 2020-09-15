@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Admin|Центр помощи|</title>
+
+
+    <link rel="shortcut icon" href="images/logo.png">
+ 
+    <meta name="viewport" content="width=device-width"/>
+
+ 
+
+
+    <meta name="viewport" content="width=device-width"/>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/templatemo-style.css">
+</head>
+
+<!-- тема success -->
+<body>
+<div id="role-error" style="display: none">У вас нет прав для просмотра данной страницы</div>
+<div id="login-error"  style="display: none">Для доступа к данной странице необходимо <a href="index.html#Entry">войти в аккаунт</a></div>
+<div id="content" style="display: none">
+    <div style="background: #F2CBFF;">
+        <a href="#users-label">Пользователи</a>
+        <a href="#articles-label">Статьи</a>
+        <a href="#tests-label">Тесты</a>
+        <h2 id="users-label">Список пользователей</h2>
+        <form id="userForm" name="userForm">
+            <input type="hidden" name="id" value="0"/>
+            <div class="form-group">
+                <input id="loginUser" class="form-control" name="login" placeholder="Логин"/>
+            </div>
+            <div class="form-group">
+                <input id="passUser" class="form-control" name="pass" placeholder="Пароль"/>
+            </div>
+            <div class="form-group">
+                <input id="emailUser" class="form-control" name="email" placeholder="Email"/>
+            </div>
+            <div class="form-group">
+                <input id="ageUser" class="form-control" name="age" placeholder="Возраст"/>
+            </div>
+            <div class="form-group">
+                <input id="roleUser" class="form-control" name="role" placeholder="Роль"/>
+            </div>
+            <div class="panel-body">
+                <button type="submit" class="btn btn-success">Сохранить</button>
+                <a id="reset-user" class="btn btn-sm btn-primary">Сбросить</a>
+            </div>
+        </form>
+
+
+        <table id="users-table" class="table table-condensed table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Логин</th>
+                <th>Пароль</th>
+                <th>Email</th>
+                <th>Возраст</th>
+                <th>Роль</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!-- тема primary -->
+    <div style="background: #EBB3FF">
+        <h2 id="articles-label">Список статей</h2>
+        <form id="articleForm" name="articleForm">
+            <input type="hidden" name="id" value="0"/>
+            <div class="form-group">
+                <input id="nameArticle" class="form-control" name="name" placeholder="Имя"/>
+            </div>
+            <div class="form-group">
+                <input id="urlArticle" class="form-control" name="url" placeholder="Ссылка"/>
+            </div>
+            <div class="form-group">
+                <input id="typeArticle" class="form-control" name="type" placeholder="Тип"/>
+            </div>
+
+            <div class="panel-body">
+                <button type="submit" class="btn btn-success">Сохранить</button>
+                <a id="reset-article" class="btn btn-sm btn-primary">Сбросить</a>
+            </div>
+        </form>
+
+        <table id="articles-table" class="table table-condensed table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Название</th>
+                <th>Ссылка</th>
+                <th>Тип</th>
+                <th></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="background:  #E8A9FF">
+        <h2 id="tests-label">Список тестов</h2>
+        <form id="testForm" name="testForm">
+            <input type="hidden" name="id" value="0"/>
+            <div class="form-group">
+                <input id="loginTest" class="form-control" name="loginTest" placeholder="Email"/>
+            </div>
+            <div class="form-group">
+                <input id="MsTest" class="form-control" name="Ms" placeholder="Сп"/>
+            </div>
+            <div class="form-group">
+                <input id="ChildrenTest" class="form-control" name="Children" placeholder="Дети"/>
+            </div>
+            <div class="form-group">
+                <input id="ActivTest" class="form-control" name="Activ" placeholder="Деятельность"/>
+            </div>
+            <div class="form-group">
+                <input id="HobbyTest" class="form-control" name="Hobby" placeholder="Хобби"/>
+            </div>
+            <div class="form-group">
+                <input id="abuseTest" class="form-control" name="abuse" placeholder="Абьюз"/>
+            </div>
+            <div class="form-group">
+                <input id="ProblemTest" class="form-control" name="Problem" placeholder="Проблема"/>
+            </div>
+            <div class="panel-body">
+                <button type="submit" class="btn btn-success">Сохранить</button>
+                <a id="reset-test" class="btn btn-sm btn-primary">Сбросить</a>
+            </div>
+        </form>
+
+        <table id="tests-table" class="table table-condensed table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>СП</th>
+                <th>Дети</th>
+                <th>Деятельность</th>
+                <th>Хобби</th>
+                <th>Абьюз</th>
+                <th>Отношение к проблеме</th>
+                <th></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+        //-----------------------------------------------User-------------------------------------------------------------
+        // Получение всех пользователей
+        function GetUsers() {
+            $.ajax({
+                url: "/api/users",
+                type: "GET",
+                contentType: "application/json",
+                success: function (users) {
+                    var rows = "";
+                    $.each(users, function (index, user) {
+                        // добавляем полученные элементы в таблицу
+                        rows += createUserRow(user);
+                    });
+                    $("#users-table").append(rows);
+                }
+            });
+        }
+
+
+        // Получение одного пользователя
+        function GetUser(id) {
+            $.ajax({
+                url: "/api/users/" + id,
+                type: "GET",
+                contentType: "application/json",
+                success: function (user) {
+                    var form = document.forms["userForm"];
+                    form.elements["id"].value = user._id;
+                    form.elements["login"].value = user.login;
+                    form.elements["pass"].value = user.pass;
+                    form.elements["email"].value = user.email;
+                    form.elements["age"].value = user.age;
+                    form.elements["role"].value = user.role;
+
+                }
+            });
+        }
+
+        // Добавление пользователя
+        function CreateUser(userLogin, userPass, userEmail, userAge, userRole) {
+            $.ajax({
+                url: "api/users",
+                contentType: "application/json",
+                method: "POST",
+                data: JSON.stringify({
+                    login: userLogin,
+                    pass: userPass,
+                    email: userEmail,
+                    age: userAge,
+                    role: userRole
+                }),
+                success: function (user) {
+                    $("#users-table").append(createUserRow(user));
+                }
+            })
+        }
+
+        function FindUser(userLogin, userPass) {
+            $.ajax({
+                url: `api/users/?login=${userLogin}`,
+                contentType: "application/json",
+                method: "GET",
+                data: JSON.stringify({
+                    login: userLogin,
+                    pass: userPass
+                }),
+                success: function (users) {
+                    var findedUser = users.find(user => {
+                        return user.login === userLogin;
+                    });
+                    if (findedUser != undefined) {
+                        if (findedUser.pass === userPass) {
+                            $("#main").html(findedUser.login);
+                            localStorage.setItem("currentUser", findedUser.login);
+                            $("#entry").hide("fast", "swing", function () {
+                                alert("С возвращением");
+                            });
+                            $("#sett").show("fast", "swing");
+
+                        }
+                        console.log(findedUser);
+                    }
+                }
+            })
+        }
+
+        function EditUser(userId, userLogin, userPass, userEmail, userAge, userRole) {
+            $.ajax({
+                url: "api/users",
+                contentType: "application/json",
+                method: "PUT",
+                data: JSON.stringify({
+                    id: userId,
+                    login: userLogin,
+                    pass: userPass,
+                    email: userEmail,
+                    age: userAge,
+                    role: userRole
+
+                }),
+                success: function (user) {
+                    resetUserForm();
+                    console.log(user);
+                    $("tr[data-rowid='" + user._id + "']").replaceWith(createUserRow(user));
+                }
+            })
+        }
+
+        // Удаление пользователя
+        function DeleteUser(id) {
+            $.ajax({
+                url: "api/users/" + id,
+                contentType: "application/json",
+                method: "DELETE",
+                success: function (user) {
+                    console.log(user);
+                    $("tr[data-rowid='" + user._id + "']").remove();
+                }
+            })
+        }
+
+        // создание строки для таблицы
+        var createUserRow = function (user) {
+            return "<tr data-rowid='" + user._id + "'><td>" + user._id + "</td>" +
+                "<td>" + user.login + "</td> <td>" + user.pass + "</td> <td>" + user.email + "</td>  <td>" + user.age + "</td> " +
+                "</td>  <td>" + user.role + "</td>" +
+                "<td><a id='editUser' data-id='" + user._id + "'>Изменить</a> | " +
+                "<a id='removeUser' data-id='" + user._id + "'>Удалить</a></td></tr>";
+        }
+
+        //-------------------------------------------------Test----------------------------------------------------------------------
+        function GetTests() {
+            $.ajax({
+                url: "/api/tests",
+                type: "GET",
+                contentType: "application/json",
+                success: function (tests) {
+                    var rows = "";
+                    $.each(tests, function (index, tests) {
+                        // добавляем полученные элементы в таблицу
+                        rows += createTestRow(tests);
+                    })
+                    $("#tests-table").append(rows);
+                }
+            });
+        }
+
+        function GetTest(id) {
+            $.ajax({
+                url: "/api/tests/" + id,
+                type: "GET",
+                contentType: "application/json",
+                success: function (test) {
+                    var form = document.forms["testForm"];
+                    form.elements["id"].value = test._id;
+                    form.elements["loginTest"].value = test.login;
+                    form.elements["Ms"].value = test.Ms;
+                    form.elements["Children"].value = test.Children;
+                    form.elements["Activ"].value = test.Activ;
+                    form.elements["Hobby"].value = test.Hobby;
+                    form.elements["abuse"].value = test.abuse;
+                    form.elements["Problem"].value = test.Problem;
+
+                }
+            });
+        }
+
+        function CreateTest(testLogin, testMs, testChildren, testActiv, testHobby, testabuse, testProblem) {
+            $.ajax({
+                url: "api/tests",
+                contentType: "application/json",
+                method: "POST",
+                data: JSON.stringify({
+                    login: testLogin,
+                    Ms: testMs,
+                    Children: testChildren,
+                    Activ: testActiv,
+                    Hobby: testHobby,
+                    abuse: testabuse,
+                    Problem: testProblem
+
+
+                }),
+                success: function (test) {
+                    $("#tests-table").append(createTestRow(test));
+                }
+            })
+        }
+
+        function EditTest(testId, testLogin, testMs, testChildren, testActiv, testHobby, testabuse, testProblem) {
+            $.ajax({
+                url: "api/tests",
+                contentType: "application/json",
+                method: "PUT",
+                data: JSON.stringify({
+                    id: testId,
+                    login: testLogin,
+                    Ms: testMs,
+                    Children: testChildren,
+                    Activ: testActiv,
+                    Hobby: testHobby,
+                    abuse: testabuse,
+                    Problem: testProblem
+
+                }),
+                success: function (test) {
+                    resetTestForm();
+                    console.log(test);
+                    $("tr[data-rowid='" + test._id + "']").replaceWith(createTestRow(test));
+                }
+            })
+        }
+
+        // Удаление пользователя
+        function DeleteTest(id) {
+            $.ajax({
+                url: "api/tests/" + id,
+                contentType: "application/json",
+                method: "DELETE",
+                success: function (test) {
+                    console.log(test);
+                    $("tr[data-rowid='" + test._id + "']").remove();
+                }
+            })
+        }
+
+        // создание строки для таблицы
+        var createTestRow = function (test) {
+            return "<tr data-rowid='" + test._id + "'><td>" + test._id + "</td>" +
+                "<td>" + test.login + "</td> <td>" + test.Ms +
+                "</td> <td>" + test.Children + "</td>  <td>" +
+                test.Activ + "</td> <td>" + test.Hobby + "</td> <td>" + test.abuse + "</td>" +
+                "</td> <td>" + test.Problem + "</td>" +
+                "<td><a id='editTest' data-id='" + test._id + "'>Изменить</a> | " +
+                "<a id='removeTest' data-id='" + test._id + "'>Удалить</a></td></tr>";
+        }
+
+        //--------------------------------Article------------------------------------------------------------
+        function GetArticles() {
+            $.ajax({
+                url: "/api/articles",
+                type: "GET",
+                contentType: "application/json",
+                success: function (article) {
+                    var rows = "";
+                    $.each(article, function (index, article) {
+                        // добавляем полученные элементы в таблицу
+                        rows += createArticleRow(article);
+                    })
+                    $("#articles-table").append(rows);
+                }
+            });
+        }
+
+        function GetArticle(id) {
+            $.ajax({
+                url: "/api/articles/" + id,
+                type: "GET",
+                contentType: "application/json",
+                success: function (article) {
+                    var form = document.forms["articleForm"];
+                    form.elements["id"].value = article._id;
+                    form.elements["name"].value = article.name;
+                    form.elements["url"].value = article.url;
+                    form.elements["type"].value = article.type;
+
+
+                }
+            });
+        }
+
+        function CreateArticle(articlename, articleurl, articletype) {
+            $.ajax({
+                url: "api/articles",
+                contentType: "application/json",
+                method: "POST",
+                data: JSON.stringify({
+                    name: articlename,
+                    url: articleurl,
+                    type: articletype
+                }),
+                success: function (article) {
+                    resetArticleForm();
+                    $("#articles-table").append(createArticleRow(article));
+                }
+            })
+        }
+
+        function EditArticle(articleId, articlename, articleurl, articletype) {
+            $.ajax({
+                url: "api/articles",
+                contentType: "application/json",
+                method: "PUT",
+                data: JSON.stringify({
+                    id: articleId,
+                    name: articlename,
+                    url: articleurl,
+                    type: articletype
+
+                }),
+                success: function (article) {
+                    resetArticleForm();
+                    console.log(article);
+                    $("tr[data-rowid='" + article._id + "']").replaceWith(createArticleRow(article));
+                }
+            })
+        }
+
+        // Удаление пользователя
+        function DeleteArticle(id) {
+            $.ajax({
+                url: "api/articles/" + id,
+                contentType: "application/json",
+                method: "DELETE",
+                success: function (article) {
+                    console.log(article);
+                    $("tr[data-rowid='" + article._id + "']").remove();
+                }
+            })
+        }
+
+        // создание строки для таблицы
+        var createArticleRow = function (article) {
+            return "<tr data-rowid='" + article._id + "'><td>" + article._id + "</td>" +
+                "<td>" + article.name + "</td> <td>" + article.url + "</td> <td>" + article.type + "</td>   " +
+                "<td><a id='editArticle' data-id='" + article._id + "'>Изменить</a> | " +
+                "<a id='removeArticle' data-id='" + article._id + "'>Удалить</a></td></tr>";
+        }
+        function resetUserForm() {
+            var form = document.forms["userForm"];
+            form.reset();
+        }
+        function resetArticleForm() {
+            var form = document.forms["articleForm"];
+            form.reset();
+        }
+        function resetTestForm() {
+            var form = document.forms["testForm"];
+            form.reset();
+        }
+        function checkUserRole(userLogin) {
+            $.ajax({
+                url: `api/users/login/${userLogin}`,
+                contentType: "application/json",
+                method: "GET",
+                data: JSON.stringify({
+                    login: userLogin,
+                }),
+                success: function (users) {
+                    var findedUser = users.find(user => {
+                        return user.login === userLogin;
+                    });
+                    if (findedUser !== undefined) {
+                        if (findedUser.role === 'admin') {
+                            document.getElementById('content').style.display = 'block'
+                        } else {
+                            document.getElementById('role-error').style.display = 'block'
+                        }
+                    }
+                }
+            })
+        }
+        $(document).ready(function () {
+            var currentUser = localStorage.getItem("currentUser");
+            if (currentUser && currentUser !== 'null') {
+                checkUserRole(currentUser);
+                $("#main").html(currentUser);
+            } else {
+                document.getElementById('login-error').style.display = 'block'
+            }
+            $("#entry").submit(function (e) {
+                e.preventDefault();
+                console.log(this.elements);
+                var login = this.elements["login"].value;
+                var pass = this.elements["pass"].value;
+                FindUser(login, pass);
+            });
+            $("#Exit").click(function (e) {
+                e.preventDefault();
+                $("#main").html('Войти');
+                localStorage.setItem("currentUser", null);
+            })
+            $("#contact-form").submit(function (e) {
+                e.preventDefault();
+                console.log(this.elements);
+                var login = this.elements["login"].value;
+                var pass = this.elements["pass"].value;
+                var email = this.elements["email"].value;
+                var age = this.elements["age"].value;
+                CreateUser(login, pass, email, age);
+            });
+            $("#reset-user").click(function (e) {
+                e.preventDefault();
+                resetUserForm();
+            });
+            $("#reset-article").click(function (e) {
+                e.preventDefault();
+                resetArticleForm();
+            });
+            $("#reset-test").click(function (e) {
+                e.preventDefault();
+                resetTestForm();
+            });
+            $('body').on("click", "#editUser", function () {
+                var id = $(this).data("id");
+                GetUser(id);
+            });
+            // нажимаем на ссылку Удалить
+            $("body").on("click", "#removeUser", function () {
+                var id = $(this).data("id");
+                DeleteUser(id);
+            });
+            $('#userForm').submit(function (e) {
+                e.preventDefault();
+                var id = this.elements["id"].value;
+                var login = this.elements["login"].value;
+                var pass = this.elements["pass"].value;
+                var email = this.elements["email"].value;
+                var age = this.elements["age"].value;
+                var role = this.elements["role"].value;
+                console.log(id);
+                if (id != 0) {
+                    EditUser(id, login, pass, email, age, role);
+                } else {
+                    CreateUser(login, pass, email, age, role);
+                }
+            });
+            //-------------------------test-----------------------------
+            $('body').on("click", "#editTest", function () {
+                var id = $(this).data("id");
+                GetTest(id);
+            });
+            // нажимаем на ссылку Удалить
+            $("body").on("click", "#removeTest", function () {
+                var id = $(this).data("id");
+                DeleteTest(id);
+            });
+            $('#testForm').submit(function (e) {
+                e.preventDefault();
+                var id = this.elements["id"].value;
+                var login = this.elements["loginTest"].value;
+                var Ms = this.elements["Ms"].value;
+                var Children = this.elements["Children"].value;
+                var Activ = this.elements["Activ"].value;
+                var Hobby = this.elements["Hobby"].value;
+                var abuse = this.elements["abuse"].value;
+                var Problem = this.elements["Problem"].value;
+                console.log(id);
+                if (id != 0) {
+                    console.log("Edit test");
+                    EditTest(id, login, Ms, Children, Activ, Hobby, abuse, Problem);
+                } else {
+                    CreateTest(login, Ms, Children, Activ, Hobby, abuse, Problem);
+                }
+            });
+            //--------------------------------------article--------------------------------------------
+            $('body').on("click", "#editArticle", function () {
+                var id = $(this).data("id");
+                GetArticle(id);
+            });
+            // нажимаем на ссылку Удалить
+            $("body").on("click", "#removeArticle", function () {
+                var id = $(this).data("id");
+                DeleteArticle(id);
+            });
+            $('#articleForm').submit(function (e) {
+                e.preventDefault();
+                var id = this.elements["id"].value;
+                var name = this.elements["name"].value;
+                var url = this.elements["url"].value;
+                var type = this.elements["type"].value;
+                console.log(id);
+                if (id != 0) {
+                    EditArticle(id, name, url, type);
+                } else {
+                    CreateArticle(name, url, type);
+                }
+            });
+            // загрузка пользователей
+            GetUsers();
+            GetArticles();
+            GetTests();
+        });
+
+    </script>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+</div>
+</body>
+</html>

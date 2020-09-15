@@ -1,0 +1,2363 @@
+
+
+
+  body {
+    background: ;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    padding-top: 70px;
+  }
+
+
+  /*---------------------------------------
+     TYPOGRAPHY              
+  -----------------------------------------*/
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    line-height: inherit;
+  }
+
+  h1 {
+    color: #252525;
+    font-size: 3em;
+    line-height: normal;
+  }
+
+  h2 {
+    color: #353535;
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  h3,
+  h3 a {
+    color: #454545;
+  }
+
+  p {
+    color: #757575;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+
+
+
+  /*---------------------------------------
+     GENERAL               
+  -----------------------------------------*/
+
+  html{
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: #252525;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none !important;
+  }
+
+  a,
+  input, button,
+  .form-control {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  a:hover, a:active, a:focus {
+    color: #29ca8e;
+    outline: none;
+  }
+
+  ::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #000000;
+  }
+
+  .section-title {
+    padding-bottom: 40px;
+  }
+
+  .section-title h2 {
+    margin: 0;
+  }
+
+  .section-title small {
+    display: block;
+  }
+
+  .overlay {
+    background: rgba(20,20,20,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .entry-form { /*круг войти-*/
+    background: #252020;
+    border-radius: 100%;
+    text-align: center;
+    padding: 6em;
+    width: 450px;
+    height: 450px;
+  }
+
+  .entry-form h2 {
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .entry-form .form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    box-shadow: none;
+    height: 45px;
+    margin: 10px 0;
+  }
+
+  .entry-form .submit-btn {
+    background: #ffffff;
+    border-radius: 50px;
+    border: 0;
+    color: #252020;
+    width: 50%;
+    height: 50px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+  }
+
+  .entry-form .submit-btn:hover {
+    background: #3f51b5;
+    color: #ffffff;
+  }
+
+  section {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  #team,
+  #testimonial {
+    background: #FFFFFF;
+  }
+
+  #team, 
+  #testimonial {
+    text-align: center;
+  }
+  
+  #google-map iframe {
+    border: 0;
+    width: 100%;
+    height: 390px;
+  }
+
+
+
+  /*---------------------------------------
+     BUTTONS               
+  -----------------------------------------*/
+
+  .section-btn {
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: inherit;
+    font-weight: normal;
+    padding: 15px 30px;
+    transition: 0.5s;
+  }
+
+  .section-btn:hover {
+    background: #ffffff;
+    border-color: transparent;
+  }
+
+
+
+  /*---------------------------------------
+       PRE LOADER              
+  -----------------------------------------*/
+
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+  }
+
+  
+
+  @-webkit-@keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+
+
+  /*---------------------------------------
+      MENU              
+  -----------------------------------------*/
+
+  .custom-navbar {
+    background: #ffffff;
+    border-top: 5px solid #29ca8e;
+    border-bottom: 0;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .custom-navbar .navbar-brand {
+    color: #454545;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  .custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: 8em;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right li a {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right li a .fa {
+    background: #29ca8e;
+    border-radius: 100%;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .custom-navbar .nav li a {
+    line-height: 40px;
+    color: #575757;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .custom-navbar .navbar-nav > li > a:hover,
+  .custom-navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+  }
+
+  .custom-navbar .nav li a:hover {
+    background-color: #29ca8e;
+    color: #ffffff;
+  }
+
+  .custom-navbar .nav li.active > a {
+    background-color: #29ca8e;
+    color: #ffffff;
+  }
+
+  .custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+  }
+
+  .custom-navbar .navbar-toggle {
+    background-color: transparent;
+  }
+
+  .custom-navbar .navbar-toggle .icon-bar {
+    background: #252525;
+    border-color: transparent;
+  }
+
+
+
+
+
+
+
+  /*---------------------------------------
+      ABOUT              
+  -----------------------------------------*/
+
+  #about figure {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+  }
+
+  #about figure span {
+    float: left;
+    margin-left: -15px;
+    padding: 15px 20px;
+    position: relative;
+    top: 20px;
+  }
+
+  #about figure span i {
+   
+    border-radius: 50px;
+    color: #8A2BE2 ;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+
+
+ 
+
+  /*---------------------------------------
+     NEWS              
+  -----------------------------------------*/
+
+  .news-thumb {
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .news-thumb .news-image {
+    float: left;
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  .news-info h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .news-date span {
+    color: #909090;
+    font-weight: bold;
+  }
+
+
+
+  /*---------------------------------------
+      TESTIMONIAL             
+  -----------------------------------------*/
+
+  #testimonial .item {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 4em 3em;
+    text-align: left;
+  }
+
+  #courses .col-md-4,
+  #testimonial .col-md-4 {
+    display: block;
+    width: 100%;
+  }
+
+  #testimonial .item > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .tst-rating {
+    margin-bottom: 15px;
+  }
+
+  .tst-rating .fa {
+    color: #3f51b5;
+  }
+
+  .tst-image,
+  .tst-author {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .tst-image img {
+    border-radius: 50px;
+    width: 60px !important;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  .tst-author h4 {
+    margin: 0;
+  }
+
+  .tst-author span {
+    color: #808080;
+    font-size: 14px;
+  }
+
+
+
+  /*---------------------------------------
+      CONTACT             
+  -----------------------------------------*/
+
+  #contact {
+    background: #3f51b5;
+  }
+
+  #contact h2 {
+    color: #ffffff;
+  }
+
+  #contact .section-title {
+    padding-bottom: 20px;
+  }
+
+  #contact h2 > small,
+  #contact p,
+  #contact a {
+    color: #f9f9f9;
+  }
+
+  #contact-form {
+    padding: 1em 0;
+  }
+
+  #contact-form .col-md-12,
+  #contact-form .col-md-4 {
+    padding-left: 0;
+  }
+
+  #contact-form .form-control {
+    border: 0;
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 10px 0;
+  }
+
+  #contact-form input {
+    height: 50px;
+  }
+
+  #contact-form input[type='submit'] {
+    border-radius: 50px;
+    border: 1px solid transparent;
+  }
+
+  #contact-form input[type='submit']:hover {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  
+
+
+
+  /*---------------------------------------
+     FOOTER              
+  -----------------------------------------*/
+
+  footer {
+    background: #252020;
+    padding: 120px 0;
+  }
+
+  footer .section-title {
+    padding-bottom: 10px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer a,
+  footer p {
+    color: #909090;
+  }
+
+  footer strong {
+    color: #d9d9d9;
+  }
+
+  footer address p {
+    margin-bottom: 0;
+  }
+
+  footer .social-icon {
+    margin-top: 25px;
+  }
+
+  .footer-info {
+    margin-right: 2em;
+  }
+
+  .footer-info h2 {
+    color: #ffffff;
+    padding: 0;
+  }
+
+  .footer_menu h2 {
+    margin-top: 2em;
+  }
+
+  .footer_menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px 5px 0;
+  }
+
+  .newsletter-form .form-control {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #303030;
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  .newsletter-form input[type="submit"] {
+    background: transparent;
+    border: 1px solid #f9f9f9;
+    border-radius: 50px;
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+    outline: none;
+    width: 50%;
+  }
+
+  .newsletter-form input[type="submit"]:hover {
+    background: #29ca8e;
+    border-color: transparent;
+  }
+
+  .newsletter-form .form-group span {
+    color: #909090;
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+
+
+  /*---------------------------------------
+     SOCIAL ICON              
+  -----------------------------------------*/
+
+  .social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icon li {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  .social-icon li a {
+    border-radius: 100px;
+    color: #29ca8e;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    margin: 5px 5px 5px 0;
+  }
+
+  .social-icon li a:hover {
+    background: #29ca8e;
+    color: #ffffff;
+  }
+
+
+
+  /*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+  @media screen and (max-width: 1170px) {
+    .custom-navbar .navbar-nav.navbar-nav-first {
+      margin-left: inherit;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    section,
+    footer {
+      padding: 60px 0;
+    }
+
+    .home-slider .item {
+      background-position: center center;
+    }
+
+    .feature-thumb,
+    .about-info,
+    .team-thumb,
+    .footer-info {
+      margin-bottom: 50px;
+    }
+
+    .contact-image {
+      margin-top: 50px;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .custom-navbar .nav li a {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h1,h2,h3 {
+      line-height: normal;
+    }
+
+    .custom-navbar {
+      background: #ffffff;
+      -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .custom-navbar .navbar-brand,
+    .custom-navbar .nav li a {
+      line-height: normal;
+    }
+
+    .custom-navbar .nav li a {
+      padding: 10px;
+    }
+
+    .custom-navbar .navbar-brand,
+    .top-nav-collapse .navbar-brand {
+      color: #252525;
+      font-weight: 600;
+    }
+
+    .custom-navbar .nav li a,
+    .top-nav-collapse .nav li a {
+      color: #575757;
+    }
+
+    .custom-navbar .navbar-nav.navbar-right li {
+      display: inline-block;
+    }
+
+    .footer-info {
+      margin-right: 0;
+    }
+
+    .footer-info.newsletter-form {
+      margin-bottom: 0;
+    }
+
+    .entry-form {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+
+  @media only screen and (max-width: 580px) {
+    h2 {
+      font-size: 1.8em;
+    }
+
+    #testimonial .item {
+      padding: 2em;
+    }
+
+    .contact-image {
+      margin-top: 0;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 2em;
+    }
+
+    #home h3 {
+      font-size: 14px;
+    }
+
+    .entry-form {
+      border-radius: 0;
+      padding: 2em;
+      max-width: 100%;
+      max-height: 100%;
+      width: inherit;
+      height: inherit;
+    }
+  }
+  
+/* =============================================================================
+   1. General Styles
+============================================================================= */
+/* Body
+============================================================================= */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #515151;
+    overflow-x: hidden;
+    font-weight: normal;
+    background-color: #ebebeb;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Prevent Scroll
+============================================================================= */
+body.stop-scroll { overflow: hidden; }
+
+
+
+/* clearfix
+============================================================================= */
+.clearfix {
+    zoom: 1;
+    clear: both;
+}
+
+
+
+/* Overflow Visible
+============================================================================= */
+.section-overflow-visible,
+.section-overflow-visible .section-container {
+    overflow: visible !important;
+}
+
+
+
+/* Link
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+a {
+    color: #e74c3c;
+    cursor: pointer;
+    text-decoration: none;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+a.no-transition {
+    -webkit-transition: all 0s ease-in-out;
+       -moz-transition: all 0s ease-in-out;
+         -o-transition: all 0s ease-in-out;
+            transition: all 0s ease-in-out;
+}
+
+
+/* Hover / Focus
+----------------------------------------------------------------------------- */
+a:hover,
+a:focus {
+    color: #121212;
+    text-decoration: none;
+}
+a:focus { outline: thin dotted; }
+
+
+/* Colors
+============================================================================= */
+/* Selection Color
+----------------------------------------------------------------------------- */
+::selection {
+    color: #ffffff;
+    text-shadow: none;
+    background-color: #121212;
+}
+::-webkit-selection {
+    color: #ffffff;
+    text-shadow: none;
+    background-color: #121212;
+}
+::-moz-selection {
+    color: #ffffff;
+    text-shadow: none;
+    background-color: #121212;
+}
+
+
+/* Main Color
+----------------------------------------------------------------------------- */
+.main-color { color: #e74c3c; }
+
+
+
+/* Background Colors
+============================================================================= */
+/* Main Background
+----------------------------------------------------------------------------- */
+.main-background-color,
+.main-background-color * {
+    color: #ffffff !important;
+}
+.main-background-color { background-color: #e74c3c !important; }
+
+
+/* Black Background
+----------------------------------------------------------------------------- */
+.black-background-color,
+.black-background-color * {
+    color: #ffffff !important;
+}
+.black-background-color { background-color: #121212 !important; }
+.black-background-color.ribbon-block-style-2::after { border-color: #121212; }
+
+
+/* Transparent Black Background
+----------------------------------------------------------------------------- */
+.transparent-black-background-color { background-color: rgba(0, 0, 0, 0.70) !important; }
+
+
+/* White Background
+----------------------------------------------------------------------------- */
+.white-background-color { background-color: #ffffff; }
+
+
+/* Grey Background
+----------------------------------------------------------------------------- */
+.grey-background-color { background-color: #f7f7f7; }
+
+
+
+/* ToolTip
+============================================================================= */
+.tooltip {
+    font-size: 14px;
+    font-weight: 400;
+}
+.tooltip-inner { padding: 8px 15px; }
+
+
+
+/* popover
+============================================================================= */
+.popover {
+    border: 0;
+    padding: 0;
+    border-radius: 2px;
+
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12);
+       -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* List
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+ol,
+ul {
+    padding: 0;
+    margin: 20px auto 15px;
+    list-style-position: inside;
+}
+ol:first-child,
+ul:first-child {
+    margin-top: -5px;
+}
+ol:last-child,
+ul:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Items
+----------------------------------------------------------------------------- */
+ol li,
+ul li {
+    margin-bottom: 5px;
+}
+ol li:last-of-type,
+ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+
+
+/* List Icon
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+ul.list-icon {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    list-style: none;
+}
+
+
+/* Icon
+----------------------------------------------------------------------------- */
+ul.list-icon li i {
+    color: #e74c3c;
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+
+/* Style 1
+============================================================================= */
+ul.list-icon-style-1 li {
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+ul.list-icon-style-1 li:last-of-type { margin-right: 0; }
+
+
+
+/* List Info
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+ul.list-info {
+    margin: 0;
+    width: 100%;
+    padding: 25px;
+    display: block;
+    overflow: hidden;
+    list-style: none;
+    border-radius: 2px;
+    border: 2px solid #dddddd;
+}
+
+
+/* List
+----------------------------------------------------------------------------- */
+ul.list-info > li {
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    margin-top: 15px;
+    padding-top: 15px;
+    position: relative;
+    border-top: 1px solid #dddddd;
+}
+ul.list-info > li:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* First Div
+----------------------------------------------------------------------------- */
+ul.list-info > li > div:first-child { margin-bottom: 5px; }
+
+
+/* Social Icons
+----------------------------------------------------------------------------- */
+ul.list-info > li .social-icons-block ul li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* Style 1
+============================================================================= */
+/* Items
+----------------------------------------------------------------------------- */
+ul.list-info-style-1 > li {
+    float: left;
+    width: 48.5%;
+    line-height: 32px;
+}
+ul.list-info-style-1 > li:nth-child(2n) {
+    float: right;
+}
+ul.list-info-style-1 > li:nth-child(2) {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* Divs
+----------------------------------------------------------------------------- */
+ul.list-info-style-1 > li > div:first-child {
+    float: left;
+    margin-bottom: 0;
+}
+ul.list-info-style-1 > li > div:last-child { float: right; }
+
+
+
+/* Ripple Animation
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.wave-effect {
+    z-index: 15;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Ripple
+----------------------------------------------------------------------------- */
+.lpbuilder-ripple {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.30);
+
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);
+}
+
+
+/* Animation
+----------------------------------------------------------------------------- */
+.ripple-animation {
+    -webkit-animation: rippleCircleAnimation 1.5s linear;
+            animation: rippleCircleAnimation 1.5s linear;
+}
+@-webkit-keyframes rippleCircleAnimation {
+    100% {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+}
+@keyframes rippleCircleAnimation {
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+
+
+/* White Content
+============================================================================= */
+.white-content,
+.white-content p,
+.white-content h1,
+.white-content h2,
+.white-content h3,
+.white-content h4,
+.white-content h5,
+.white-content h6,
+.white-content a:hover,
+.white-content .form-control,
+.white-content .form-group label {
+    color: #ffffff;
+}
+
+.white-content .line-separator,
+.white-content .form-group label::before {
+    background-color: #ffffff;
+}
+.white-content .form-group label::before { opacity: 0.30; }
+
+
+
+/* Triangle Arrow
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.triangle-arrow {
+    width: 0;
+    height: 0;
+    left: 25%;
+    z-index: 20;
+    margin-left: 12px;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+
+/* White
+----------------------------------------------------------------------------- */
+.triangle-arrow.white-arrow { border-top: 15px solid #ffffff; }
+
+
+/* Grey
+----------------------------------------------------------------------------- */
+.triangle-arrow.grey-arrow { border-top: 15px solid #f7f7f7; }
+
+
+
+/* Label
+============================================================================= */
+.label {
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 5px 15px 3px;
+}
+.label-main { background-color: #e74c3c; }
+
+
+
+
+/* =============================================================================
+   2. Typography
+============================================================================= */
+/* Heading
+============================================================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    color: #121212;
+    letter-spacing: 0;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+h3 { font-size: 26px; font-weight: 600; line-height: 1.3; }
+h4 { font-size: 20px; font-weight: 600; line-height: 1.3; }
+h5 { font-size: 18px; font-weight: 500; line-height: 1.4; }
+h6 { font-size: 16px; font-weight: 600; line-height: 1.4; }
+
+
+
+/* Montserrat Font
+============================================================================= */
+h1,
+h2,
+.tooltip,
+.btn-lpbuilder,
+.navbar-brand,
+.btn-lpbuilder-white {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+/* Poppins Font
+============================================================================= */
+.popover {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+/* Paragraph
+============================================================================= */
+p { margin: 0 0 15px 0; }
+p:last-of-type { margin-bottom: 0; }
+
+
+
+/* Large Heading
+============================================================================= */
+.lg-heading,
+.title-block-container.text-center .lg-heading {
+    font-size: 150px;
+}
+
+
+
+/* Small Heading
+============================================================================= */
+.sm-heading,
+.title-block-container.text-center .sm-heading {
+    font-size: 45px;
+}
+
+
+
+/* Small Paragraph
+============================================================================= */
+.sm-p,
+.hero-section .title-block-container.text-center p.sm-p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+
+
+/* =============================================================================
+   3. Loader Block
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.loader-block {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 999999;
+    position: fixed;
+    text-align: center;
+    background-color: #ffffff;
+}
+.no-js .loader-block { display: none; }
+
+
+/* Container
+----------------------------------------------------------------------------- */
+.loader-block-container {
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+
+/* Circle Block
+----------------------------------------------------------------------------- */
+.circle-block {
+    margin: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: relative;
+    border: 4px solid #dddddd;
+
+    -webkit-animation: lpbuilder-spin 0.75s infinite linear;
+            animation: lpbuilder-spin 0.75s infinite linear;
+}
+.circle-block::before,
+.circle-block::after {
+    top: -4px;
+    left: -4px;
+    content: '';
+    display: none;
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    position: absolute;
+    border-radius: inherit;
+}
+
+
+/* Animation
+============================================================================= */
+@-webkit-keyframes lpbuilder-spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes lpbuilder-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+
+/* Style 1
+============================================================================= */
+.circle-block-style-1 { border-top-width: 0; }
+
+    overflow: hidden;
+    min-height: 100vh;
+    max-width: 1600px;
+    position: relative;
+    background-color: #ffffff;
+
+    -webkit-transition: all 0.50s ease-in-out;
+       -moz-transition: all 0.50s ease-in-out;
+         -o-transition: all 0.50s ease-in-out;
+            transition: all 0.50s ease-in-out;
+}
+.no-js #main-wrapper { opacity: 1; }
+
+
+/* Full Width Wrapper
+----------------------------------------------------------------------------- */
+body.full-width-page #main-wrapper { max-width: 100%; }
+
+
+
+.header-section {
+    width: 100%;
+    z-index: 101;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Container
+----------------------------------------------------------------------------- */
+.header-section-container {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+
+
+/* =============================================================================
+   6. Top Header
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.top-header {
+    z-index: 3;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/* Social Icons Block
+----------------------------------------------------------------------------- */
+.top-header .social-icons-block {
+    padding: 1px 15px;
+    text-align: right;
+}
+
+
+/* ADS Block
+----------------------------------------------------------------------------- */
+.top-header .ads-block-container { margin-bottom: 0; }
+
+
+
+
+/* =============================================================================
+   7. Main Menu
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.header-menu {
+    z-index: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+/* Container
+----------------------------------------------------------------------------- */
+.header-menu-container {
+    z-index: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+/* Logo
+----------------------------------------------------------------------------- */
+/* Link
+--------------------------------------------------------- */
+.navbar-brand {
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    color: #121212;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+    margin: 0;
+}
+
+/* Image
+--------------------------------------------------------- */
+.navbar-brand > img {
+    max-width: 100%;
+    max-height: 44px;
+    margin-top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+/* Menu
+----------------------------------------------------------------------------- */
+/* Main Wrapper
+--------------------------------------------------------- */
+.navbar {
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.navbar-collapse.collapse { padding: 0; }
+
+/* List ( Menu )
+--------------------------------------------------------- */
+ul.navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Items
+--------------------------------------------------------- */
+ul.navbar-nav > li {
+    margin: 0 15px;
+    position: relative;
+}
+ul.navbar-nav > li:last-child { margin-right: 0; }
+ul.navbar-nav > li:first-child { margin-left: 0; }
+
+/* Link
+--------------------------------------------------------- */
+/* Wrapper
+------------------------------------- */
+ul.navbar-nav > li > a:not(.btn) {
+    opacity: 0.75;
+    color: #121212;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 1px 0 0;
+    line-height: 73px;
+    position: relative;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+ul.navbar-nav > li.parent-list > a { border-bottom-color: transparent !important; }
+
+/* Hover / Focus
+------------------------------------- */
+ul.navbar-nav > li > a:not(.btn):hover,
+ul.navbar-nav > li.active > a:not(.btn) {
+    opacity: 1;
+    border-bottom-color: #e74c3c;
+    background-color: transparent;
+}
+ul.navbar-nav > li > a:not(.btn):focus { background-color: transparent; }
+
+
+/* Button
+--------------------------------------------------------- */
+ul.navbar-nav > li > a.btn {
+    height: 44px;
+    margin: 18px 0;
+    padding: 0 30px;
+    line-height: 44px;
+}
+
+
+
+
+/* =============================================================================
+   8. Menu Button
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.navbar-toggle {
+    border: 0;
+    padding: 0;
+    height: 22px;
+    margin: 29px 0;
+    color: #9932CC;
+    font-size: 15px;
+    overflow: hidden;
+    border-radius: 0;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+/* Container
+----------------------------------------------------------------------------- */
+.navbar-toggle > span {
+    width: 21px;
+    height: 21px;
+    font-size: 16px;
+    overflow: hidden;
+    line-height: 21px;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+
+    -webkit-transform-origin: center;
+       -moz-transform-origin: center;
+        -ms-transform-origin: center;
+         -o-transform-origin: center;
+            transform-origin: center;
+
+    -webkit-transition: transform 0.30s ease-in-out;
+       -moz-transition: transform 0.30s ease-in-out;
+         -o-transition: transform 0.30s ease-in-out;
+            transition: transform 0.30s ease-in-out;
+
+    -webkit-animation: lpbuilderAnimationSpan 1s forwards;
+            animation: lpbuilderAnimationSpan 1s forwards;
+}
+@-webkit-keyframes lpbuilderAnimationSpan {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+@keyframes lpbuilderAnimationSpan {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* Middle Line
+----------------------------------------------------------------------------- */
+.navbar-toggle > span i.lines {
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin-top: 9px;
+    position: relative;
+    background-color: #000000;
+
+    -webkit-animation: lpbuilderAnimationLines 1s forwards;
+            animation: lpbuilderAnimationLines 1s forwards;
+
+}
+@-webkit-keyframes lpbuilderAnimationLines {
+    0%, 50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #000000;
+    }
+}
+@keyframes lpbuilderAnimationLines {
+    0%, 50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #000000;
+    }
+}
+
+
+/* =============================================================================
+   1. General Styles
+============================================================================= */
+/* Body
+============================================================================= */
+body{
+    margin: 0;
+    padding: 0;
+    color: #515151;
+    overflow-x: hidden;
+    font-weight: normal;
+    background-color: #ebebeb;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Ripple Animation
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.wave-effect {
+    z-index: 15;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Ripple нажатие на кнопку
+----------------------------------------------------------------------------- */
+.lpbuilder-ripple {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.30);
+
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);
+}
+
+
+/* Animation нажатие на анимацию
+----------------------------------------------------------------------------- */
+.ripple-animation {
+    -webkit-animation: rippleCircleAnimation 1.5s linear;
+            animation: rippleCircleAnimation 1.5s linear;
+}
+@-webkit-keyframes rippleCircleAnimation {
+    100% {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+}
+@keyframes rippleCircleAnimation {
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+
+
+/* White Content белый цвет
+============================================================================= */
+.white-content,
+.white-content p,
+.white-content h1,
+.white-content h2,
+.white-content h3,
+.white-content h4,
+.white-content h5,
+.white-content h6,
+.white-content a:hover,
+.white-content .form-control,
+.white-content .form-group label {
+    color: #ffffff;
+}
+
+.white-content .line-separator,
+.white-content .form-group label::before {
+    background-color: #ffffff;
+}
+.white-content .form-group label::before { opacity: 0.30; }
+
+
+
+/* Triangle Arrow
+============================================================================= */
+
+
+
+/* White
+----------------------------------------------------------------------------- */
+.triangle-arrow.white-arrow { border-top: 15px solid #ffffff; }
+
+
+
+/* Full Width Wrapper 
+----------------------------------------------------------------------------- */
+body.full-width-page #main-wrapper { max-width: 100%; }
+
+
+/* Full Width Wrapper  зона теста
+----------------------------------------------*/
+.header-section {
+    width: 100%;
+    z-index: 101;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ADS Block
+----------------------------------------------------------------------------- */
+.top-header .ads-block-container { margin-bottom: 0; }
+
+
+/* =============================================================================
+   7. Main Menu
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.header-menu {
+    z-index: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+/* Container контейнер хедера, при спуске остается целостный
+----------------------------------------------------------------------------- */
+.header-menu-container {
+    z-index: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+/* Logo
+----------------------------------------------------------------------------- */
+/* Link ссылка лого
+--------------------------------------------------------- */
+.navbar-brand {
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    color: #121212;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+    margin: 0;
+}
+
+/* Image ЛОГО 
+--------------------------------------------------------- */
+.navbar-brand > img {
+    max-width: 100%;
+    max-height: 63px;
+    margin-top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+/* Menu
+----------------------------------------------------------------------------- */
+/* Main Wrapper
+--------------------------------------------------------- */
+.navbar {
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.navbar-collapse.collapse { padding: 0; }
+
+/* List ( Menu )
+--------------------------------------------------------- */
+ul.navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Items разрыв между пунктами меню
+--------------------------------------------------------- */
+ul.navbar-nav > li {
+    margin: 0 15px;
+    position: relative;
+}
+ul.navbar-nav > li:last-child { margin-right: 0; }
+ul.navbar-nav > li:first-child { margin-left: 0; }
+
+/* Link Меню
+--------------------------------------------------------- */
+/* Wrapper
+------------------------------------- */
+ul.navbar-nav > li > a:not(.btn) {
+    opacity: 0.75;
+    color: #121212;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 1px 0 0;
+    line-height: 73px;
+    position: relative;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+ul.navbar-nav > li.parent-list > a { border-bottom-color: transparent !important; }
+
+/* Hover / Focus при наведение на список хедера
+------------------------ ------------- */
+ul.navbar-nav > li > a:not(.btn):hover,
+ul.navbar-nav > li.active > a:not(.btn) {
+    opacity: 1;
+    border-bottom-color: #9400D3;
+    background-color: transparent;
+}
+ul.navbar-nav > li > a:not(.btn):focus { background-color: transparent; }
+
+
+/* Button Войти
+--------------------------------------------------------- */
+ul.navbar-nav > li > a.btn {
+    height: 44px;
+    margin: 18px 0;
+    padding: 0 30px;
+    line-height: 44px;
+}
+
+/* =============================================================================
+   10. Alternative Header Линия хедера
+============================================================================= */
+/* Fixed Header
+============================================================================= */
+.header-menu-container.header-menu-stuck {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =============================================================================
+   12. Buttons  кнопки
+============================================================================= */
+/* Button
+============================================================================= */
+button {
+    outline: none !important;
+
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+
+/* Special Buttons Пройти тест
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.btn-lpbuilder,
+.btn-lpbuilder-white {
+    border: 0;
+    z-index: 15;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 24px;
+    position: relative;
+    padding: 10px 30px;
+    border-radius: 2px;
+    margin: 30px 10px 0 0;
+    outline: none !important;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+       -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+.hero-section .btn-lpbuilder,
+.hero-section .btn-lpbuilder-white {
+    margin-bottom: 5px;
+}
+a.btn:last-of-type { margin-right: 0; }
+
+.btn-lpbuilder *,
+.btn-lpbuilder-white * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Button (Войти)
+----------------------------------------------------------------------------- */
+.btn-lpbuilder,
+.btn-lpbuilder:focus {
+    color: #ffffff !important;
+    background-color: #9400D3!important;
+}
+.btn-lpbuilder * { color: #ffffff; }
+
+
+
+/* =============================================================================
+   13. Main Sections
+============================================================================= */
+/* Container Контейнер мэйн норм размер
+----------------------------------------------------------------------------- */
+.section-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0 70px;
+}
+
+
+/* Padding шоб размер норм был
+============================================================================= */
+/* Large Padding
+----------------------------------------------------------------------------- */
+.section-lg-padding > .section-container { padding: 160px 0 130px !important; }
+
+
+/* Medium Padding
+----------------------------------------------------------------------------- */
+.section-md-padding > .section-container { padding: 145px 0 115px !important; }
+
+
+
+/* Typography Текст "Мы поможем"
+----------------------------------------------------------------------------- */
+/* h1
+--------------------------------------------------------- */
+.title-block-container h1 { margin-top: -5px; }
+.title-block-container.text-center h1 {
+    line-height: 1;
+    font-size: 80px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+/* =============================================================================
+   19. Background Image Block
+============================================================================= */
+/* Wrapper размер
+----------------------------------------------------------------------------- */
+.background-image-block {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+/* Main Image (Главная картинка)
+----------------------------------------------------------------------------- */
+.background-image-block img {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-transform: translate(-60%, -60%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.background-image-block img.mobile-image { display: none; }
+
+
+/* =============================================================================
+   27. Form Elements
+============================================================================= */
+/* Form Group текст на линии
+============================================================================= */
+.form-group {
+    width: 100%;
+    display: block;
+    line-height: 0;
+    position: relative;
+    margin: 0 auto 30px;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+
+
+/* Form Control (текст бокс чтоб не белы)
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.form-control {
+    border: 0;
+    z-index: 2;
+    height: 44px;
+    color: #121212;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 24px;
+    position: relative;
+    background-color: transparent;
+
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background-color: transparent;
+}
+
+
+/* Focus (текст бокс)
+----------------------------------------------------------------------------- */
+.form-control:focus {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+
+/* Label (емайл текст)
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.form-group label {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    cursor: text;
+    display: block;
+    color: #515151;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+    position: absolute;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+textarea.form-control + label { padding: 10px 0 36px; }
+
+
+/* Main Line (линия емайл)
+----------------------------------------------------------------------------- */
+.form-group label::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background-color: #dddddd;
+}
+
+
+/* Focus Line
+----------------------------------------------------------------------------- */
+.form-group label::after {
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #e74c3c;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+.form-control:focus + label::after {
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* Filled (текст поднимается вверх при вводе)
+============================================================================= */
+.form-control:focus + label,
+.form-control.input-filled + label {
+    padding-top: 0;
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 40px;
+}
+
+textarea.form-control:focus + label,
+textarea.form-control.input-filled + label {
+    padding-bottom: 66px;
+}
+
+
+
+
+/* Focus
+--------------------------------------------------------- */
+.select-menu-input:focus + label::before,
+.select-menu-input.input-filled + label::before {
+    font-size: 15px;
+}
+
+
+/* Error
+----------------------------------------------------------------------------- */
+.select-menu-input.error { border-color: #ff0000; }
+.select-menu-input.error + label::after { background-color: transparent; }
+
+
+
+/* Hero Section Открыващаяся штука зачем мне проходить те
+----------------------------------------------------------------------------- */
+.hero-section .subscribe-form-block {
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+
+  /*---------------------------------------
+     FOOTER              
+  -----------------------------------------*/
+
+  footer {
+    background: #252020;
+    padding: 120px 0;
+  }
+
+  footer .section-title {
+    padding-bottom: 10px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer a,
+  footer p {
+    color: #909090;
+  }
+
+  footer strong {
+    color: #d9d9d9;
+  }
+
+  footer address p {
+    margin-bottom: 0;
+  }
+
+  footer .social-icon {
+    margin-top: 25px;
+  }
+
+  .footer-info {
+    margin-right: 2em;
+  }
+
+  .footer-info h2 {
+    color: #ffffff;
+    padding: 0;
+  }
+
+  .footer_menu h2 {
+    margin-top: 2em;
+  }
+
+  .footer_menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px 5px 0;
+  }
+
+  .newsletter-form .form-control {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #303030;
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  .newsletter-form input[type="submit"] {
+    background: transparent;
+    border: 1px solid #f9f9f9;
+    border-radius: 50px;
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+    outline: none;
+    width: 50%;
+  }
+
+  .newsletter-form input[type="submit"]:hover {
+    background: #29ca8e;
+    border-color: transparent;
+  }
+
+  .newsletter-form .form-group span {
+    color: #909090;
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+

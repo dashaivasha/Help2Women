@@ -1,0 +1,706 @@
+
+/* =============================================================================
+   1. General Styles
+============================================================================= */
+/* Body
+============================================================================= */
+body{
+    margin: 0;
+    padding: 0;
+    color: #515151;
+    overflow-x: hidden;
+    font-weight: normal;
+    background-color: #ebebeb;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Ripple Animation
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.wave-effect {
+    z-index: 15;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Ripple нажатие на кнопку
+----------------------------------------------------------------------------- */
+.lpbuilder-ripple {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.30);
+
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);
+}
+
+
+/* Animation нажатие на анимацию
+----------------------------------------------------------------------------- */
+.ripple-animation {
+    -webkit-animation: rippleCircleAnimation 1.5s linear;
+            animation: rippleCircleAnimation 1.5s linear;
+}
+@-webkit-keyframes rippleCircleAnimation {
+    100% {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+}
+@keyframes rippleCircleAnimation {
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+
+
+/* White Content белый цвет
+============================================================================= */
+.white-content,
+.white-content p,
+.white-content h1,
+.white-content h2,
+.white-content h3,
+.white-content h4,
+.white-content h5,
+.white-content h6,
+.white-content a:hover,
+.white-content .form-control,
+.white-content .form-group label {
+    color: #ffffff;
+}
+
+.white-content .line-separator,
+.white-content .form-group label::before {
+    background-color: #ffffff;
+}
+.white-content .form-group label::before { opacity: 0.30; }
+
+
+
+/* Triangle Arrow
+============================================================================= */
+
+
+
+/* White
+----------------------------------------------------------------------------- */
+.triangle-arrow.white-arrow { border-top: 15px solid #ffffff; }
+
+
+
+/* Full Width Wrapper 
+----------------------------------------------------------------------------- */
+body.full-width-page #main-wrapper { max-width: 100%; }
+
+
+/* Full Width Wrapper  зона теста
+----------------------------------------------*/
+.header-section {
+    width: 100%;
+    z-index: 101;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ADS Block
+----------------------------------------------------------------------------- */
+.top-header .ads-block-container { margin-bottom: 0; }
+
+
+/* =============================================================================
+   7. Main Menu
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.header-menu {
+    z-index: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+/* Container контейнер хедера, при спуске остается целостный
+----------------------------------------------------------------------------- */
+.header-menu-container {
+    z-index: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+/* Logo
+----------------------------------------------------------------------------- */
+/* Link ссылка лого
+--------------------------------------------------------- */
+.navbar-brand {
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    color: #121212;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+    margin: 0;
+}
+
+/* Image ЛОГО 
+--------------------------------------------------------- */
+.navbar-brand > img {
+    max-width: 100%;
+    max-height: 63px;
+    margin-top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+/* Menu
+----------------------------------------------------------------------------- */
+/* Main Wrapper
+--------------------------------------------------------- */
+.navbar {
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.navbar-collapse.collapse { padding: 0; }
+
+/* List ( Menu )
+--------------------------------------------------------- */
+ul.navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Items разрыв между пунктами меню
+--------------------------------------------------------- */
+ul.navbar-nav > li {
+    margin: 0 15px;
+    position: relative;
+}
+ul.navbar-nav > li:last-child { margin-right: 0; }
+ul.navbar-nav > li:first-child { margin-left: 0; }
+
+/* Link Меню
+--------------------------------------------------------- */
+/* Wrapper
+------------------------------------- */
+ul.navbar-nav > li > a:not(.btn) {
+    opacity: 0.75;
+    color: #121212;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 1px 0 0;
+    line-height: 73px;
+    position: relative;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+ul.navbar-nav > li.parent-list > a { border-bottom-color: transparent !important; }
+
+/* Hover / Focus при наведение на список хедера
+------------------------ ------------- */
+ul.navbar-nav > li > a:not(.btn):hover,
+ul.navbar-nav > li.active > a:not(.btn) {
+    opacity: 1;
+    border-bottom-color: #e74c3c;
+    background-color: transparent;
+}
+ul.navbar-nav > li > a:not(.btn):focus { background-color: transparent; }
+
+
+/* Button Войти
+--------------------------------------------------------- */
+ul.navbar-nav > li > a.btn {
+    height: 44px;
+    margin: 18px 0;
+    padding: 0 30px;
+    line-height: 44px;
+}
+
+/* =============================================================================
+   10. Alternative Header Линия хедера
+============================================================================= */
+/* Fixed Header
+============================================================================= */
+.header-menu-container.header-menu-stuck {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =============================================================================
+   12. Buttons  кнопки
+============================================================================= */
+/* Button
+============================================================================= */
+button {
+    outline: none !important;
+
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+
+
+/* Special Buttons Пройти тест
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.btn-lpbuilder,
+.btn-lpbuilder-white {
+    border: 0;
+    z-index: 15;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 24px;
+    position: relative;
+    padding: 10px 30px;
+    border-radius: 2px;
+    margin: 30px 10px 0 0;
+    outline: none !important;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+       -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+.hero-section .btn-lpbuilder,
+.hero-section .btn-lpbuilder-white {
+    margin-bottom: 5px;
+}
+a.btn:last-of-type { margin-right: 0; }
+
+.btn-lpbuilder *,
+.btn-lpbuilder-white * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Button (Войти)
+----------------------------------------------------------------------------- */
+.btn-lpbuilder,
+.btn-lpbuilder:focus {
+    color: #ffffff !important;
+    background-color: #e74c3c !important;
+}
+.btn-lpbuilder * { color: #ffffff; }
+
+
+
+/* =============================================================================
+   13. Main Sections
+============================================================================= */
+/* Container Контейнер мэйн норм размер
+----------------------------------------------------------------------------- */
+.section-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0 70px;
+}
+
+
+/* Padding шоб размер норм был
+============================================================================= */
+/* Large Padding
+----------------------------------------------------------------------------- */
+.section-lg-padding > .section-container { padding: 160px 0 130px !important; }
+
+
+/* Medium Padding
+----------------------------------------------------------------------------- */
+.section-md-padding > .section-container { padding: 145px 0 115px !important; }
+
+
+
+/* Typography Текст "Мы поможем"
+----------------------------------------------------------------------------- */
+/* h1
+--------------------------------------------------------- */
+.title-block-container h1 { margin-top: -5px; }
+.title-block-container.text-center h1 {
+    line-height: 1;
+    font-size: 80px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+/* =============================================================================
+   19. Background Image Block
+============================================================================= */
+/* Wrapper размер
+----------------------------------------------------------------------------- */
+.background-image-block {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+/* Main Image (Главная картинка)
+----------------------------------------------------------------------------- */
+.background-image-block img {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-transform: translate(-60%, -60%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.background-image-block img.mobile-image { display: none; }
+
+
+/* =============================================================================
+   27. Form Elements
+============================================================================= */
+/* Form Group текст на линии
+============================================================================= */
+.form-group {
+    width: 100%;
+    display: block;
+    line-height: 0;
+    position: relative;
+    margin: 0 auto 30px;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+
+
+/* Form Control (текст бокс чтоб не белы)
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.form-control {
+    border: 0;
+    z-index: 2;
+    height: 44px;
+    color: #121212;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 24px;
+    position: relative;
+    background-color: transparent;
+
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background-color: transparent;
+}
+
+
+/* Focus (текст бокс)
+----------------------------------------------------------------------------- */
+.form-control:focus {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+
+/* Label (емайл текст)
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.form-group label {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    cursor: text;
+    display: block;
+    color: #515151;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+    position: absolute;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+textarea.form-control + label { padding: 10px 0 36px; }
+
+
+/* Main Line (линия емайл)
+----------------------------------------------------------------------------- */
+.form-group label::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background-color: #dddddd;
+}
+
+
+/* Focus Line
+----------------------------------------------------------------------------- */
+.form-group label::after {
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #e74c3c;
+
+    -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+.form-control:focus + label::after {
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* Filled (текст поднимается вверх при вводе)
+============================================================================= */
+.form-control:focus + label,
+.form-control.input-filled + label {
+    padding-top: 0;
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 40px;
+}
+
+textarea.form-control:focus + label,
+textarea.form-control.input-filled + label {
+    padding-bottom: 66px;
+}
+
+
+
+
+/* Focus
+--------------------------------------------------------- */
+.select-menu-input:focus + label::before,
+.select-menu-input.input-filled + label::before {
+    font-size: 15px;
+}
+
+
+/* Error
+----------------------------------------------------------------------------- */
+.select-menu-input.error { border-color: #ff0000; }
+.select-menu-input.error + label::after { background-color: transparent; }
+
+
+
+/* Hero Section Открыващаяся штука зачем мне проходить те
+----------------------------------------------------------------------------- */
+.hero-section .subscribe-form-block {
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+
+  /*---------------------------------------
+     FOOTER              
+  -----------------------------------------*/
+
+  footer {
+    background: #252020;
+    padding: 120px 0;
+  }
+
+  footer .section-title {
+    padding-bottom: 10px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer a,
+  footer p {
+    color: #909090;
+  }
+
+  footer strong {
+    color: #d9d9d9;
+  }
+
+  footer address p {
+    margin-bottom: 0;
+  }
+
+  footer .social-icon {
+    margin-top: 25px;
+  }
+
+  .footer-info {
+    margin-right: 2em;
+  }
+
+  .footer-info h2 {
+    color: #ffffff;
+    padding: 0;
+  }
+
+  .footer_menu h2 {
+    margin-top: 2em;
+  }
+
+  .footer_menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px 5px 0;
+  }
+
+  .newsletter-form .form-control {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #303030;
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  .newsletter-form input[type="submit"] {
+    background: transparent;
+    border: 1px solid #f9f9f9;
+    border-radius: 50px;
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+    outline: none;
+    width: 50%;
+  }
+
+  .newsletter-form input[type="submit"]:hover {
+    background: #29ca8e;
+    border-color: transparent;
+  }
+
+  .newsletter-form .form-group span {
+    color: #909090;
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
